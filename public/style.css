@@ -1,0 +1,183 @@
+/*
+ * Hi! I'm your stylesheet! I've got some sensible defaults here,
+ * but feel free to change me to your heart's content!
+ */
+
+* {
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+  color: whitesmoke;
+  -webkit-text-stroke: 1px black;
+  text-shadow:
+      3px 3px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+body {
+  background: linear-gradient(#ffffff, #575656);
+  background-repeat: repeat;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  background-image: url("../Photos/Other/Background.jpg");
+  background-size: cover;
+}
+
+nav {
+  background-image: url("../Photos/Other/NavBackground.jpg");
+  align-items: center;
+  /* background: linear-gradient(#ffffff, #575656); */
+  color: #c0c0c0;
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  padding: 10px;
+}
+
+.navButton {
+  background-color: cornflowerblue;
+  padding: 2px;
+  border: 5px groove blue;
+  opacity: 0.5;
+  transition: transform .5s,
+              opacity .5s;
+}
+
+.navButton:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-animation: fadein 2s;
+}
+
+.SinglePageView {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-animation: fadein 2s;
+}
+
+.SinglePageView.Description {
+  max-width: 60%;
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.AllPageView {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  -webkit-animation: fadein 2s;
+}
+
+.AllViewProfile {
+  display: flex;
+  flex-direction: column;
+}
+
+h4 {
+  margin: auto;
+  width: 50%;
+  -webkit-animation: fadein 2s;
+}
+
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+h3 {
+  margin: auto;
+  width: 80%;
+  -webkit-animation: fadein 2s;
+  /* -webkit-animation: h3 15s linear infinite;
+  animation: h3 15s linear infinite; */
+}
+
+h6 {
+  -webkit-animation: h6 20s linear infinite;
+  animation: h6 20s linear infinite;
+  align-self: center;
+}
+
+@-webkit-keyframes h6 {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+ }
+
+.InputForm {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  -webkit-animation: fadein 2s;
+}
+
+.Description {
+  width: 50%;
+}
+
+input {
+  color: black;
+  text-shadow: none;
+}
+
+button {
+  color: black;
+  text-shadow: none;
+}
+
+.campusImg {
+  border-radius: 15px;
+  height: 70%;
+  width: 70%;
+  box-shadow: 5px 5px 10px 0 blue, -5px -5px 10px 0 blue;
+  transition: transform .5s;
+}
+
+.campusImg:hover {
+  transform: scale(1.5);
+}
+
+
+.studentImg {
+  border-radius: 15px;
+  height: 70%;
+  width: 70%;
+  box-shadow: 5px 5px 10px 0 white, -5px -5px 10px 0 white;
+  transition: transform .5s;
+}
+
+.studentImg:hover {
+  transform: scale(1.5);
+}
+
+img.profileImages {
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 0 gold, -5px -5px 10px 0 gold;
+}
+
+.xButton {
+    height: 4%;
+    width: 4%;
+    border-radius: 20%;
+    background-color: darkblue;
+    color: white;
+}
